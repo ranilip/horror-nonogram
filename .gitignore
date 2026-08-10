@@ -1,0 +1,16 @@
+# Build artifacts
+target/
+**/target/
+node_modules/
+**/node_modules/
+nonogram-web/build/
+# Local secrets
+.env
+.env.*
+!.env.example
+*.local
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+__MACOSX/
