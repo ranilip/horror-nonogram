@@ -1,0 +1,125 @@
+*The cold wind slaps my face. Rain taps the wooden boat.*
+*Ahead — a rocky island wrapped in fog.*
+*From time to time, I catch a glimpse of a blinking light — the lighthouse.*
+
+~(live: null time: null) 9 100010001010111010000101000010111010100000001000111000000111000000000000001111100001111100"
+
+*My companion sits next to me. Silent.*
+*His eyes are clouded, like dried salt.*
+*We’ve never met before, but we’ll be stuck here together for weeks.*
+
+*An old man stands on the shore.*
+*He says nothing — just nods and points toward a wooden house.*
+*Then disappears into the mist.*
+
+=
+
+*Inside the house, everything stinks of mold and dampness.*
+*Two beds.*
+*A rusty stove.*
+*A table.*
+*I throw my things onto one bed and sit down — and feel something hard under the mattress.*
+
+*I reach inside, tear the lining — and pull out a carved figurine.*
+*A mermaid. Made of yellowed bone, worn smooth. Her eyes are hollow, mouth slightly open.*
+*I swear she’s staring at me.*
+
+~(live: null time: null) 7 101110010101101011111010101100111000011010001100101110011110000110011011011000110110~
+
+*Night falls.*
+*My first shift. I descend to the steam signal.*
+*Hot air sears my face. The iron breathes.*
+*I shovel coal into the furnace. It roars.*
+*Suddenly — a sound. Metal scraping.*
+*I turn. In the window…*
+
+~(live: null time: 60) 7 00111000111110110101111010111111111010001001000100111110~
+
+*Face.*
+*Pale.*
+*Hollow.*
+
+(MeAlarmed)«Who's there?..»
+
+*Silence.*
+
+=
+
+*Morning.*
+*My companion is still snoring, mouth open, drooling.*
+*I glance at the mermaid. Her head — turned? Her gaze is different. More… direct.*
+
+~(live: 3 time: 66) 9 100010001010000010000111000001101100000111000010000010100010001~
+
+=
+
+*Daylight.*
+*I’m fixing the roof. Wind tears at me. The boards rot under my feet.*
+*Below, he watches. Unblinking.*
+*A gull lands beside me — one eye missing.*
+*It stares, too close.*
+
+~(live: 3 time: null) 12 000111000000111101000000000111000000000000000000000111011111001110110000001111101100000111111000000000100000000101110000~
+
+(MeAngry)«Get lost, damn bird!»
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+*It shrieks and dives at me.*
+*I kick — it escapes into the sky.*
+
+=
+
+*Night again.*
+*I wake to tapping at the window. *
+*I approach — nothing. I step outside.*
+*On the lighthouse balcony — he stands.*
+*Naked. Arms stretched out. Embracing the glass of the lens.*
+
+~(live: null time: 120) 7 100100100000000010100100000111000111110111~
+
+(MeHorrified)«...what are you doing?..»
+
+*He disappears into the light.*
+
+=
+
+*The next morning, I check the cistern.*
+*I open the hatch — and recoil.*
+*The smell hits like a fist.*
+*Dead gulls float in the water. *
+*One — still alive, flapping one broken wing.*
+*A familiar one-eyed gull swoops in and starts pecking the wounded bird*
+*I yell. I rush in. I grab the attacker and beat it.*
+
+~(live: 1 time: 70) 5 0101101011001110001010110~
+
+*Again.*
+
+~(live: 1 time: 70) 5 1110001010110100011101001~
+
+*Again.*
+
+~(live: 1 time: 70) 5 0011011110100101001110100~
+
+*Until it stops moving.*
+
+=
+
+*Back inside. He sits on the floor, clutching a bottle.*
+*His eyes rolled back. He mumbles.*
+
+(CompanionWhispering)«There is truth in the light. But not every soul can bear it...»
+
+(MeAngry)«What the hell are you talking about, you lunatic?»
+
+(CompanionSmiling)«Mermaids don’t lie.»
+
+=
+
+*Storm winds rise. The walls creak. I look through the window.*
+*A silhouette stands on the cliff.*
+*Watching me.*
+*Motionless.*
+*I glance at the figurine.*
+*She lies on her side. Her mouth now open wider. A twisted grin.*

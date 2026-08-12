@@ -1,0 +1,96 @@
+*Another day passes. I barely speak to my companion.*
+*He wanders the hallways, whispering to himself like he’s talking to a previous keeper.*
+*Someone I can’t see.*
+*My nights are longer now.*
+*I dream of the mermaid.*
+*And the shadow in the window.*
+
+=
+
+*Today — it’s my shift to clean the lens.*
+*I climb the stairs to the top. Each step echoes inside my skull.*
+*The lighthouse breathes like a dying animal.*
+*The lens room door is already open.*
+*The light pulses — almost alive.*
+
+*I wipe the glass from the inside.*
+*Then — a sound behind me.*
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+(CompanionSmiling)«She saw you…»
+
+*I turn.*
+*He’s standing in the doorway, holding the mermaid figure in his hand. Tight.*
+
+(MeAngry)«What do you mean?»
+
+(CompanionSmiling)«She shows herself to those who listen.»
+
+*He extends the figure to me.*
+*I take it — I can’t help it.*
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+=
+
+*He leaves as if nothing happened…*
+*I’m left alone.*
+
+*I return downstairs.*
+*I sit at the table and open the old journal I found under the floorboards. It belonged to the previous keeper.*
+*I write.*
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+*“…He speaks to the light. I’m starting to understand why.”*
+
+=
+
+*Later that night, I’m woken by a noise.*
+*Metal clanging.*
+*From below. The boiler? No — deeper.*
+
+*I head down. The hatch to the cellar is open.*
+*Tanks, pipes, forgotten electric boxes.*
+*I’ve never been down here.*
+
+*The light flickers. I step inside.*
+*Whispering. Water.*
+*Something moves under the surface.*
+*I lean over — and see my reflection.*
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+*Smiling at me.*
+
+(MeHorrified)«No…»
+
+*The reflection doesn’t blink.*
+
+=
+
+*I rush back upstairs.*
+*The figure is gone from the table.*
+*My companion stands in the doorway.*
+
+(CompanionWhispering)«She doesn’t like it when you run.»
+
+=
+
+*I wake up alone in the morning.*
+*He’s gone.*
+
+*I go out to the shore.*
+*For the first time in days — the weather is clear.*
+*In the sand — a single trail of footsteps.*
+*Leading into the sea.*
+*Right where the depth begins.*
+
+*I sit at the edge of the cliff. And I listen to the lighthouse.*
+
+~(live: 1 time: 70) 5 1010011100101010110001110~
+
+*Pulse.*
+*Light.*
+*Breath.*

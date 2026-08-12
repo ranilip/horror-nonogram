@@ -1,0 +1,60 @@
+### GET TOP SCORES
+GET http://localhost:8080/api/score/nonogram
+Accept: application/json
+
+###
+
+### ADD SCORE
+POST http://localhost:8080/api/score
+Content-Type: application/json
+
+{
+  "player": "tester",
+  "game": "nonogram",
+  "points": 150,
+  "playedOn": "2025-04-09"
+}
+
+###
+
+### GET COMMENTS
+GET http://localhost:8080/api/comment/nonogram
+Accept: application/json
+
+###
+
+### ADD COMMENT
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "player": "tester",
+  "game": "nonogram",
+  "comment": "Fun game!",
+  "commentedOn": "2025-04-09"
+}
+
+###
+
+### GET AVERAGE RATING
+GET http://localhost:8080/api/rating/nonogram
+Accept: application/json
+
+###
+
+### GET PLAYER RATING
+GET http://localhost:8080/api/rating/nonogram/tester
+Accept: application/json
+
+###
+
+### SET RATING
+POST http://localhost:8080/api/rating
+Content-Type: application/json
+
+{
+  "player": "tester",
+  "game": "nonogram",
+  "rating": 5,
+  "ratedOn": "2025-04-09"
+}
