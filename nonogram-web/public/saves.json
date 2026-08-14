@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "title": "The Lighthouse",
+    "description": "Your journey begins at the edge of the world..."
+  },
+  {
+    "id": 1,
+    "title": "The Basement",
+    "description": "The air is damp. You hear something breathing..."
+  },
+  {
+    "id": 2,
+    "title": "The Forest",
+    "description": "The trees whisper secrets as you walk through..."
+  },
+  {
+    "id": 3,
+    "title": "The Castle",
+    "description": "A grand structure looms in the distance..."
+  },
+  {
+    "id": 4,
+    "title": "The Cave",
+    "description": "Darkness surrounds you, but you feel a pull forward..."
+  }
+]

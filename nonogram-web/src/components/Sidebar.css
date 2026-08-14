@@ -1,0 +1,46 @@
+.menuSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  position: absolute;
+  top: 174px;
+  left: 176px;
+}
+.iconSidebar {
+  width: 98px;
+  height: auto;
+  object-fit: contain;
+  transition: 0.2s ease-in-out;
+}
+.home:hover .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/home-hov.png");
+}
+.leader:hover .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/leader-hov.png");
+}
+.rule:hover .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/rule-hov.png");
+}
+.comment:hover .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/comment-hov.png");
+}
+.log:hover .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/log-hov.png");
+}
+
+.home.active .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/home-act.png");
+}
+.leader.active .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/leader-act.png");
+}
+.rule.active .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/rule-act.png");
+}
+.comment.active .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/comment-act.png");
+}
+.log.active .iconSidebar {
+  content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/log-act.png");
+}

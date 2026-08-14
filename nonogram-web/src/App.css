@@ -1,0 +1,35 @@
+.appLayout {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'BILLH___.TTF';
+    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/BILLH___.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mom';
+    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Mom.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Punk Typewriter.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AA';
+    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/AA_typewriter.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Love';
+    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Lovelt__.ttf') format('truetype');
+}
+
