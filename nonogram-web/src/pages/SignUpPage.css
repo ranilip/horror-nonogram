@@ -1,0 +1,29 @@
+.signUpPage {
+    background-image: url('/nonogram-web/public/images/background/signup.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+    position: absolute;
+    top: 174px;
+    left: 464px;
+}
+
+.sign h1 {
+    text-align: center;
+    margin: 0 0 35px 0;
+    font-size: 45px;
+    font-family: 'BILLH___.TTF', sans-serif;
+    text-shadow:
+            0 2px 4px #5e5c56,
+            0 0 10px #231d13;
+    letter-spacing: 6px;
+    font-weight: normal;
+}

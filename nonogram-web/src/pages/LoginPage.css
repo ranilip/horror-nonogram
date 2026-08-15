@@ -1,0 +1,125 @@
+.loginPage {
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.loginMessege {
+    width: 591px;
+    height: 40px;
+    font-size: 20px;
+    color: #72736b;
+    text-shadow:
+            0 1px 3px #151414,
+            0 0 20px #191611;
+    font-family: 'Love', sans-serif;
+    position: absolute;
+    margin: 38px 0 0 426px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: transparent;
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/er2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 464px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin: 0 0 43px 0;
+    font-size: 45px;
+    font-family: 'BILLH___.TTF', sans-serif;
+    text-shadow:
+            0 2px 4px #5e5c56,
+            0 0 10px #231d13;
+    letter-spacing: 6px;
+    font-weight: normal;
+}
+
+.input {
+    width: 492px;
+    height: 58px;
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/login1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    font-size: 22px;
+    text-shadow:
+            0 0 2px #7b7c73,
+            0 0 8px #56574f;
+    font-family: 'Love', sans-serif;
+    font-weight: bold;
+}
+
+.input:focus {
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/login-write1.png');
+}
+
+.input::placeholder {
+    font-size: 20px;
+    color: #2b2721;
+    text-shadow:
+            0 1px 3px #737068,
+            0 0 20px #1b160c;
+    font-family: 'Love', sans-serif;
+    font-weight: bold;
+}
+
+.iconMod {
+    width: 321px;
+    height: 82px;
+    transition: 0.2s ease-in-out;
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size:24px;
+    font-family: 'Mom', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow:
+            0 1px 3px #7e7b73,
+            0 0 20px #2b2416;
+    color: #17130e;
+    position: absolute;
+    top: 419px;
+    left: 96px;
+}
+
+.iconMod:hover {
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode-hav.png');
+    cursor: pointer;
+}
+
+.signUpText {
+    font-size: 20px;
+    color: #0b0804;
+    text-shadow:
+            0 1px 3px #737068,
+            0 0 20px #1b160c;
+    font-family: 'Love', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 362px;
+}

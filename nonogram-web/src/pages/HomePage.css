@@ -1,0 +1,48 @@
+.homePage {
+    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    top: 523px;
+    left: 462px;
+    gap: 143px;
+}
+
+.iconWrapper {
+    position: relative;
+    display: inline-block;
+    width: 324px;
+    height: auto;
+}
+
+.iconMode {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.iconText {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-family: 'Mom', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow:
+            0 2px 3px #77746d,
+            0 0 8px #3a352b;
+    pointer-events: none;
+    color: #100c06;
+}
+
+.iconMode:hover {
+    content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode-hav.png");
+}
