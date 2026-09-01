@@ -1,53 +1,48 @@
 .rule-page {
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/rule.png');
+    background-image: var(--bg-rule);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
 }
-
-.rules-container {
-    max-width: 730px;
-    margin-left: 490px;
-    color: #100c06;
-
-}
-
+.rules-container { max-width:730px; margin-left:490px; color:#100c06; }
 .rules-container h1 {
-    font-size: 45px;
-    font-family: 'BILLH___.TTF', sans-serif;
-    text-shadow:
-            0 2px 4px #5e5c56,
-            0 0 10px #231d13;
-    letter-spacing: 6px;
-    font-weight: normal;
-    margin: 0 0 60px 0;
-    padding-top: 192px;
-    text-align: center;
+    font-size:45px;
+    font-family:'BILLH___.TTF',sans-serif;
+    text-shadow:0 2px 4px #5e5c56,0 0 10px #231d13;
+    letter-spacing:6px;
+    font-weight:normal;
+    color:#100c06;
+    margin:0 0 60px;
+    padding-top:192px;
+    text-align:center;
 }
-
 .rules-container h2 {
-    font-size:21px;
-    font-family: 'Mom', sans-serif;
-    letter-spacing: 1px;
-    font-weight: bold;
-    text-shadow:
-            0 1px 3px #68655e,
-            0 0 20px #1c170d;
-    margin: 30px 0 0 0;
+    font:700 21px/1.2 'Mom',sans-serif;
+    letter-spacing:1px;
+    color:#100c06;
+    text-shadow:0 1px 3px #68655e,0 0 20px #1c170d;
+    margin:0;
 }
+.rules-container p {
+    font:700 20px/1.2 'Love',sans-serif;
+    color:#100c06;
+    text-shadow:0 1px 3px #737068,0 0 20px #1b160c;
+    margin:9px 0 0;
+}
+.rule-state-legend{display:flex;align-items:center;gap:30px;margin-top:11px}
+.rule-state-legend>span{display:flex;align-items:center;gap:10px;font:700 20px/1.2 'Love',sans-serif;color:#100c06}
+.rule-cell{display:inline-flex;align-items:center;justify-content:center;flex:none;box-sizing:border-box;width:32px;height:32px;font:400 20px/1 'Love',sans-serif;border:0;box-shadow:none;background-size:100% 100%;background-repeat:no-repeat}
+.rule-cell-filled{background-image:var(--tile-light);color:#211f19}
+.rule-cell-empty{background-image:var(--tile-dark);color:#958e83;text-shadow:none;filter:none;-webkit-text-stroke:0;}
+.rule-cell-unknown{background-image:var(--tile-dark);color:#d8d0bd}
+.rule-clues{display:grid;gap:10px;align-content:start}
+.rule-example{display:flex;align-items:center;gap:0;min-width:0}
+.rule-clue{flex:none;width:64px;display:flex;justify-content:flex-end;gap:0;text-align:center;white-space:pre;font:400 21px/1 'Mom',sans-serif;color:#100c06;font-variant-numeric:tabular-nums}
+.rule-example-cells{display:flex;gap:0;flex:none}
+.rule-example-description{margin-left:15px;font:700 20px/1.2 'Love',sans-serif;color:#100c06}
+.rules-container .rule-gap-note{margin:0;font-size:20px;color:#100c06}
 
-.rules-container p, .rules-container li {
-    font-size: 20px;
-    text-shadow:
-            0 1px 3px #737068,
-            0 0 20px #1b160c;
-    font-family: 'Love', sans-serif;
-    font-weight: bold;
-    margin: 10px 0 0 0;
-    line-height: 1.2;
-}
+.rule-clue-number{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;color:#17130e;text-shadow:0 1px 1px #e2dac050;background:var(--tile-grey) center/100% 100% no-repeat}
 
-.rules-container ul {
-    padding-left: 20px;
-}
+.rule-state-legend>span,.rule-example-description{letter-spacing:normal;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}

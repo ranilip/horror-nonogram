@@ -1,5 +1,5 @@
 .loginPage {
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/login.png');
+    background-image: var(--bg-login);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
     text-align: center;
     padding-top: 20px;
     background-color: transparent;
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/er2.png');
+    background-image: var(--icon-er2);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +51,7 @@
 .input {
     width: 492px;
     height: 58px;
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/login1.png');
+    background-image: var(--icon-login1);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -68,7 +68,7 @@
 }
 
 .input:focus {
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/login-write1.png');
+    background-image: var(--icon-login-write1);
 }
 
 .input::placeholder {
@@ -84,8 +84,8 @@
 .iconMod {
     width: 321px;
     height: 82px;
-    transition: 0.2s ease-in-out;
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode.png');
+    transition: filter 0.2s ease-in-out;
+    background-image: var(--icon-mode);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -106,7 +106,7 @@
 }
 
 .iconMod:hover {
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode-hav.png');
+    background-image: var(--icon-mode-hav);
     cursor: pointer;
 }
 
@@ -123,3 +123,5 @@
     position: absolute;
     top: 362px;
 }
+
+.loginMessege:not(:empty){display:flex;align-items:center;justify-content:center;background-size:100% 100%}
