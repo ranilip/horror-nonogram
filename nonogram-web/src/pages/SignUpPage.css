@@ -1,5 +1,5 @@
 .signUpPage {
-    background-image: url('/nonogram-web/public/images/background/signup.png');
+    background-image: var(--bg-signup);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

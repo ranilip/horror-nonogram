@@ -1,7 +1,7 @@
 .appLayout {
     margin: 0;
     padding: 0;
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/back.png');
+    background-image: var(--bg-back);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,26 +10,36 @@
 
 @font-face {
     font-family: 'BILLH___.TTF';
-    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/BILLH___.TTF') format('truetype');
+    src: url('../public/fonts/BILLH___.TTF') format('truetype');
 }
 
 @font-face {
     font-family: 'Mom';
-    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Mom.ttf') format('truetype');
+    src: url('../public/fonts/Mom.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Typewriter';
-    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Punk Typewriter.otf') format('truetype');
+    src: url('../public/fonts/Punk Typewriter.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'AA';
-    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/AA_typewriter.ttf') format('truetype');
+    src: url('../public/fonts/AA_typewriter.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Love';
-    src: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/fonts/Lovelt__.ttf') format('truetype');
+    src: url('../public/fonts/Lovelt__.ttf') format('truetype');
 }
 
+
+/* All page layers share a single 16:9 coordinate system. */
+.legacy-stage{position:absolute;left:0;top:0;width:1365px;height:767.8125px;transform:scale(var(--stage-scale,1));transform-origin:top left;z-index:1}
+.legacy-stage .appLayout,.legacy-stage .homePage,.legacy-stage .loginPage,.legacy-stage .signUpPage,.legacy-stage .rule-page{width:1365px;height:767.8125px;background-size:100% 100%;position:relative}
+.legacy-stage .homePage .overlay{display:none}
+.unfinished-page{padding:300px 120px 0 450px;color:#eee;font:24px system-ui;text-shadow:0 1px 4px #000}.unfinished-page a{color:#fff}
+
+
+
+.loginMessege:empty{display:none}

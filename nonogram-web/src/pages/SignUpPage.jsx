@@ -3,7 +3,7 @@ import { registerUser } from '../services/userApi';
 import './SignUpPage.css';
 import './LoginPage.css';
 
-function SignUpPage() {
+function SignUpPage({ editorPreview = false }) {
     const [player, setPlayer] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -35,7 +35,7 @@ function SignUpPage() {
 
     return (
         <div className="signUpPage">
-            <p className="loginMessege">{message}</p>
+            <p className="loginMessege" role="status">{editorPreview ? 'Invalid email format' : message}</p>
             <form onSubmit={handleSubmit} className="sign">
                 <h1>Sign Up</h1>
                 <input

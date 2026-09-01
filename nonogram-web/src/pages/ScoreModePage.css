@@ -1,0 +1,17 @@
+.score-page{position:relative;width:1365px;height:767.8125px;background:var(--bg-back) center/100% 100% no-repeat;color:#100c06}
+.score-title{font:400 45px/1.2 'BILLH___.TTF',sans-serif;letter-spacing:6px;text-align:center;text-shadow:0 2px 4px #5e5c56,0 0 10px #231d13}
+.score-stats{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:25px;font:700 20px/1.2 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c;white-space:nowrap}
+.score-board-area{display:flex;align-items:center;justify-content:center}
+.score-board{display:grid;gap:0;align-content:center;justify-content:center}
+.score-tile{box-sizing:border-box;width:var(--cell-size,24px);height:var(--cell-size,24px);display:flex;align-items:center;justify-content:center;border:0;border-radius:0;padding:0;margin:0;background-size:100% 100%;background-repeat:no-repeat;font:400 var(--clue-size,16px)/1 'Mom',sans-serif}
+.score-hint{background-image:var(--tile-grey);color:#17130e;text-shadow:0 1px 1px #e2dac050}
+.score-cell{background-image:var(--tile-dark);cursor:pointer;color:#958e83;font:400 var(--cross-size,18px)/1 'Love',sans-serif;text-shadow:none;box-shadow:none;filter:none;-webkit-text-stroke:0;opacity:1}
+.score-cell-correct{background-image:var(--tile-light)}
+.score-cell:disabled{cursor:default;opacity:1}
+.score-cell:focus-visible{outline:1px solid #958e83;outline-offset:-2px}
+.score-new-game{display:flex;align-items:center;justify-content:center;background:var(--icon-mode) center/100% 100% no-repeat;border:0;border-radius:0;padding:0;color:#17130e;font:700 24px/1 'Mom',sans-serif;letter-spacing:1px;text-shadow:0 1px 3px #7e7b73,0 0 20px #2b2416;cursor:pointer}
+.score-new-game:focus-visible{outline:1px solid #958e83;outline-offset:-2px}
+
+.score-stats>span{display:flex;flex-direction:column;gap:8px}.score-stats strong{font-family:'Mom',sans-serif;font-size:28px;font-weight:700;letter-spacing:1px}
+.score-tools{display:flex;flex-direction:column;justify-content:center;gap:8px;font:700 16px/1.2 'Love',sans-serif;color:#100c06;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.score-tool-controls{display:flex;align-items:center;gap:25px}.score-tool-controls label{display:flex;align-items:center;gap:10px}.score-tool-controls select{font:700 16px/1.2 'Love',sans-serif;color:#17130e;background:#8c877780;border:1px solid #3e3b32;border-radius:0;padding:5px 8px}.score-tool-controls option{background:#a39c8b;color:#17130e}.score-tool-controls select:disabled{opacity:.5}.score-source-note{font-size:14px;line-height:1.2}.score-loading{font:700 20px/1.3 'Love',sans-serif;color:#100c06;text-shadow:0 1px 3px #737068}

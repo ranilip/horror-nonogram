@@ -1,31 +1,27 @@
-import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom';
+import {HashRouter as Router,Link,useLocation} from 'react-router-dom';
+import {useState,useEffect} from 'react';
+import {currentUser} from './services/gameApi';
 import './App.css';
-import Sidebar from './components/Sidebar.jsx';
-import HomePage from "./pages/HomePage";
-import LoginPage from "./pages/LoginPage";
-import RulePage from "./pages/RulePage";
-import SignUpPage from "./pages/SignUpPage";
-import {useState} from "react";
-
-function App() {
-    const [loggedUser, setLoggedUser] = useState(null);
-
-    return (
-        <Router>
-            <div className="appLayout">
-                <Sidebar isLoggedIn={!!loggedUser} />
-
-                <div className="PageContent">
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/login" element={<LoginPage loggedUser={loggedUser} setLoggedUser={setLoggedUser} />} />
-                        <Route path="/rule" element={<RulePage />} />
-                        <Route path="/signup" element={<SignUpPage />} />
-                    </Routes>
-                </div>
-            </div>
-        </Router>
-    );
+// Shared stage styles (.site-viewport, .scaled-site, .placed-button) live in LayoutEditor.css.
+import './LayoutEditor.css';
+import PageSurface from './PageSurface';
+import {readLayout,placement,ButtonArt,pages} from './layout';
+import StoryModePage from './pages/StoryModePage';
+import SoundToggle from './SoundToggle';
+import ScaledSite,{pageArt} from './ScaledSite';
+import {setupUiSounds} from './sound';
+setupUiSounds();
+function Site(){
+ const location=useLocation();
+ const [loggedUser,setLoggedUser]=useState(null);
+ // The server keeps the login in a session, so it survives a page reload.
+ useEffect(()=>{currentUser().then(me=>{if(me?.loggedIn)setLoggedUser(me.login);}).catch(()=>{});},[]);
+ if(location.pathname==='/story')return <StoryModePage/>;
+ const page=Object.keys(pages).find(p=>pages[p].route===location.pathname);
+ const items=readLayout(page||'home');
+ return <><ScaledSite page={page||'home'} art={pageArt(page||'home',pages[page||'home'].background,items)}>
+ {page?<PageSurface page={page} items={items} loggedUser={loggedUser} setLoggedUser={setLoggedUser}/>:<div className="unfinished-page">Ця сторінка ще не реалізована у репозиторії.<br/><Link to="/">На головну</Link></div>}
+ {items.filter(i=>i.kind!=='content'&&(page==='home'||!i.text)).map(item=><Link className={'placed-button button-'+item.id} key={item.id} to={item.to} aria-label={item.label} style={placement(item)}><ButtonArt item={item}/></Link>)}
+ </ScaledSite><SoundToggle className="sound-toggle-fixed"/></>;
 }
-
-export default App;
+export default function App(){return <Router><Site/></Router>;}

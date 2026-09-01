@@ -1,0 +1,58 @@
+/* Leaderboard and Comments: same stage, panel, fonts and tiles as Score Mode (1365 × 768 legacy stage). */
+.records-page{color:#100c06}
+.records-message{margin:14px 0 0;font:700 18px/1.3 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.demo-tag{margin-left:8px;padding:1px 6px;font:700 11px/1.3 'Love',sans-serif;color:#d8d0bd;background:#100c06b0;letter-spacing:.5px;vertical-align:middle;text-shadow:none}
+
+/* Leaderboard: each rank sits on a grey clue tile, like the numbers on the board. */
+.leader-table{display:flex;flex-direction:column;gap:2px;overflow:auto;font:700 18px/1.2 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.leader-row{display:grid;grid-template-columns:44px 1fr 130px 70px 120px;align-items:center;gap:14px;min-height:34px;padding:1px 6px;border-bottom:1px solid #100c0626}
+.leader-head{font:700 14px/1 'Mom',sans-serif;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #100c0659}
+.leader-row strong{font:700 22px/1 'Mom',sans-serif;letter-spacing:1px}
+.leader-rank{display:flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--tile-grey) center/100% 100% no-repeat;color:#17130e;font:400 18px/1 'Mom',sans-serif;text-shadow:0 1px 1px #e2dac050}
+.leader-player{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Stars: clipped tile textures. */
+.stars{display:inline-flex;gap:3px;vertical-align:middle}
+.star{display:inline-block;width:20px;height:20px;padding:0;border:0;background:var(--tile-dark) center/100% 100% no-repeat;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.star-full{background-image:var(--tile-light)}
+.star-half{background:var(--tile-light) left/50% 100% no-repeat,var(--tile-dark) center/100% 100% no-repeat}
+.star-picker .star{width:30px;height:30px;cursor:pointer;transition:filter .15s}
+.star-picker .star:hover,.star-picker .star:focus-visible{filter:brightness(1.35);outline:none}
+
+/* Comments */
+.comments-summary{display:flex;align-items:center;gap:12px;font:700 18px/1.2 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.comments-summary .star{width:26px;height:26px}
+.comments-list{overflow-y:auto;padding-right:10px;mask-image:linear-gradient(transparent,#000 12px,#000 calc(100% - 16px),transparent)}
+.comment-item{padding:9px 2px 10px;border-bottom:1px solid #100c0626}
+.comment-item header{display:flex;align-items:center;gap:10px;font:700 16px/1.2 'Mom',sans-serif;letter-spacing:.5px}
+.comment-item header .demo-tag{margin-left:0}
+.comment-item time{margin-left:auto;font:700 13px/1 'Love',sans-serif;opacity:.75}
+.comment-anonymous{font-style:italic;opacity:.8}
+.comment-item p{margin:5px 0 0;font:700 17px/1.35 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c;overflow-wrap:anywhere}
+.comment-form{display:flex;flex-direction:column;gap:8px}
+.comment-form-top{display:flex;align-items:center;gap:16px}
+.comment-as{font:700 15px/1.2 'Love',sans-serif;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.comment-form-row{display:flex;align-items:center;gap:14px}
+/* The original login slot (login1.png) at its own 492 × 58 size, not stretched. */
+.records-page .comment-input{flex:none;font-size:18px}
+.records-page .comment-send{width:170px;height:58px;flex:none;font-size:20px}
+.records-page .comment-send:hover{background-image:var(--icon-mode-hav)}
+.records-page .comment-send:disabled{opacity:.6;cursor:default}
+.comment-status{margin:0;font:700 15px/1.2 'Love',sans-serif;text-shadow:0 1px 3px #737068}
+
+/* Game Over: result of saving the run. */
+.score-over-note{display:flex;align-items:center;justify-content:center;font:700 20px/1.2 'Love',sans-serif;color:#100c06;text-shadow:0 1px 3px #737068,0 0 20px #1b160c}
+.score-over-note:empty{display:none}
+
+/* Scrollbars: thin, in the colour of the stone panel's edge (picked from back.png: #35332d). */
+.comments-list,.leader-table{scrollbar-width:thin;scrollbar-color:#35332d transparent}
+.comments-list::-webkit-scrollbar,.leader-table::-webkit-scrollbar{width:6px}
+.comments-list::-webkit-scrollbar-track,.leader-table::-webkit-scrollbar-track{background:transparent}
+.comments-list::-webkit-scrollbar-thumb,.leader-table::-webkit-scrollbar-thumb{background:#35332d;border-radius:0}
+
+/* Nicknames in the colour of the stars (average of tile-light.png: #918a7f), with a dark shadow. */
+.comment-item header b{color:#918a7f;text-shadow:0 1px 2px #000,0 0 6px #000}
+.comment-item header .comment-anonymous{color:#918a7f}
+
+/* Leaderboard: the first three places keep the grey clue tile, the rest sit on the dark tile. */
+.leader-row:not(.leader-head):not(.leader-top) .leader-rank{background-image:var(--tile-dark);color:#d8d0bd;text-shadow:0 1px 1px #000}

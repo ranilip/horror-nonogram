@@ -1,5 +1,5 @@
 .homePage {
-    background-image: url('/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/background/home.png');
+    background-image: var(--bg-home);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,5 +44,5 @@
 }
 
 .iconMode:hover {
-    content: url("/Users/vira/Desktop/gamestudio-9751/Nonogram/nonogram-web/public/images/icon/mode-hav.png");
+    content: var(--icon-mode-hav);
 }

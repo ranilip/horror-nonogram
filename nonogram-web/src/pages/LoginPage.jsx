@@ -3,7 +3,7 @@ import { loginUser } from '../services/userApi';
 import { NavLink } from 'react-router-dom';
 import './LoginPage.css';
 
-function LoginPage({ loggedUser, setLoggedUser }) {
+function LoginPage({ loggedUser, setLoggedUser, editorPreview = false }) {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
@@ -25,7 +25,7 @@ function LoginPage({ loggedUser, setLoggedUser }) {
 
     return (
         <div className="loginPage">
-            {message && <p className="loginMessege">{message}</p>}
+            <p className="loginMessege" role="status">{editorPreview ? 'Error connecting to server' : message}</p>
             <form onSubmit={handleSubmit} className="login-form">
                 <h1>Login</h1>
                 <input
