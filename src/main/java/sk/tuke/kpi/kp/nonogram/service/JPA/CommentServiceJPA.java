@@ -27,7 +27,7 @@ public class CommentServiceJPA implements CommentService {
     public List<Comment> getComments(String game) throws CommentException {
         try {
             TypedQuery<Comment> query = entityManager.createQuery(
-                    "SELECT c FROM Comment c WHERE c.game = :game ORDER BY c.commentedOn DESC",
+                    "SELECT c FROM Comment c WHERE c.game = :game ORDER BY c.commentedOn DESC, c.id DESC",
                     Comment.class
             );
             query.setParameter("game", game);

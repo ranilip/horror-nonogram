@@ -1,5 +1,7 @@
 package sk.tuke.kpi.kp.nonogram.sentity;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,9 +17,13 @@ public class User {
     @GeneratedValue
     private int id;
 
+    // The React sign-up form sends "player", the login form sends "login".
+    @JsonAlias("player")
     @Column(nullable = false, unique = true)
     private String login;
 
+    // Stored as a PBKDF2 hash; never sent back in JSON.
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(nullable = false)
     private String password;
 

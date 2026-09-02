@@ -14,6 +14,7 @@ public class UserServiceJPA implements UserService {
 
     @Override
     public void register(User user) {
+        user.setPassword(PasswordHash.hash(user.getPassword()));
         entityManager.persist(user);
     }
 
@@ -23,7 +24,7 @@ public class UserServiceJPA implements UserService {
                 .setParameter("login", login)
                 .getResultList()
                 .stream()
-                .filter(u -> u.getPassword().equals(password))
+                .filter(u -> PasswordHash.matches(password, u.getPassword()))
                 .findFirst()
                 .orElse(null);
     }

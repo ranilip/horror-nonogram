@@ -10,6 +10,8 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <!-- The web server; SpringClient remains the console client. -->
+        <start-class>sk.tuke.kpi.kp.nonogram.server.GameStudioServer</start-class>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>

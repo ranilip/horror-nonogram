@@ -25,6 +25,13 @@ public class Comment implements Serializable {
     private String comment;
     private LocalDate commentedOn;
 
+    // Stars (1–5) given together with this comment; null for comments without a rating.
+    private Integer rating;
+
+    // Synthetic demo rows (DemoData); shown with a Demo label on the site.
+    @Column(nullable = false, columnDefinition = "boolean default false")
+    private boolean demo;
+
     public Comment(String player, String game, String comment, LocalDate commentedOn) {
         this.player = player;
         this.game = game;
