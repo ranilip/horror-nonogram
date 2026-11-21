@@ -19,6 +19,14 @@ Java 17 · Spring Boot 3 · PostgreSQL · React 19 (Create React App)
 | **Leaderboard** | **Comments** |
 | ![Leaderboard](docs/screenshots/leaderboard.jpg) | ![Comments](docs/screenshots/comments.jpg) |
 
+## Gameplay
+
+| Score Mode — mid-run (one life lost, finished groups crossed out) | Game Over |
+|---|---|
+| ![Score Mode in progress](docs/screenshots/score-mode-playing.jpg) | ![Game Over](docs/screenshots/game-over.jpg) |
+| **Login** | **Sign Up** |
+| ![Login](docs/screenshots/login.jpg) | ![Sign Up](docs/screenshots/sign-up.jpg) |
+
 ## Features
 
 **Story Mode** — a short trailer for a future story campaign, built from the original art and `story.txt`:
