@@ -108,6 +108,3 @@ More detail: [docs/STORY_MODE.md](docs/STORY_MODE.md) · [docs/SERVER.md](docs/S
 - All artwork, fonts, the story and the game design are by Vira Zablotska.
 - The leaderboard and comments start with a few demo entries created by `DemoData` (accounts with an
   `@demo.invalid` e-mail that cannot log in; demo comments have `demo = true` in the database).
-- Commit dates in this repository are set by hand and are not real development timestamps: the earlier history
-  was reconstructed from a project snapshot, and the web/server/readme commits were made in November 2026
-  and dated September 2026.
